@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+            <meta charset="UTF-8"/>
+            <title>Prompter</title>
+            <!--課題：同一ディレクトリでない相対パスを使用している-->
+            <link rel="stylesheet" href="style/style.css" type="text/css"/>
+            <!--課題：少なくとも1ページは、JavaScriptを使ってインタラクティブな（ユーザの入力によって表示が変化するような）ページとする-->
+            <script src='script/prompt.js'></script>
+            <meta name="viewport" content="width=device-width,initial-scale=1">
+        </head>
+        <body>
+            <header> <!--課題：HTMLで見出し、段落などの基本的な文章の構造に関する要素を適切に使い分けている-->
+                <ul>
+                    <!--課題：複数のページをリンクでつないだ構造とする-->
+                    <li class="selected"><a href="index.html" >Prompter</a></li>
+                    <li style="float: right;"><a href="settings.html" >Settings</a></li>
+                    </ul>
+            </header>
+            <div id="wrap">
+                <div id="screen">
+                <div id="canvasSpace"></div>
+                <nav>
+                    <ul>
+                        <!--課題：画像のalt属性が適切に指定されている（代替情報が必要でなければ空文字列でよい）-->
+                        <li class="mid-button" id="startButton"><img src="assets/start.png" alt="開始" />　開始　</li>
+                        <li class="mid-button" id="stopButton"><img src="assets/pouse.png" alt="停止" />　停止　</li>
+                        <li class="mid-button" id="fullScreenButton" style="float: right;">全画面</li>
+                        </ul>
+                </nav>
+                </div>
+                <footer>
+                    <p>&copy; 2018 Copyright Yuji Sasaki. All rights reserved.</p>
+                    <p>
+                        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                        <img style="border:0;width:88px;height:31px"
+                            src="http://jigsaw.w3.org/css-validator/images/vcss"
+                            alt="正当なCSSです!" />
+                        </a>
+                        &emsp;動作確認環境：Safari 12.0
+                    </p>
+                </footer>
+            </div>
+        </body>
+    </html>

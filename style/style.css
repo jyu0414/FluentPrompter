@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+    min-height: 100%;
+    height: 100%;
+}
+
+a {
+    color: #F1ECE9;
+}
+
+html {
+    min-height: 100%;
+    height: 100%;
+    background-color: #333A42;
+    color: #F1ECE9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+header ul {
+    padding-right: 40px;
+    padding-left: 40px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(255, 100, 95);
+}
+
+header ul li {
+    display: inline-block;
+    height: 3em;
+    line-height: 3em;
+    min-width: 100px;
+    text-align: center;
+    cursor: pointer;
+}
+
+header ul a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* 課題：授業で扱わなかったCSSの機能を自分で調べて使用している */
+header ul li:hover {
+    background-color: rgba(255, 255, 255, 0.3);  
+}
+
+.selected {
+    background-color: rgba(255, 255, 255, 0.3);  
+}
+
+header ul {
+    margin: 0;
+    background-color: #D7443F;
+}
+
+#wrap {
+    margin-top: 0;
+    margin-left: 10%;
+    margin-right: 10%;
+    min-height: calc(100% - 3em + 5em);
+    height: calc(100% - 3em + 5em);
+}
+
+footer {
+    height: 5em;
+    margin-top: auto;
+    margin-bottom: 0;
+    padding-top: 20px;
+}
+
+nav {
+    height: 5em;
+}
+
+section {
+    min-height: calc(100% - 5em);
+    background: #485058;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+#canvasSpace {
+    height: calc(100% - 5em);
+    background: #485058;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+#screen {
+    background-color: #333A42;
+    height: calc(100% - 5em);
+}
+
+#screen:-webkit-full-screen {
+    height: 100%;
+    width: 100%;
+}
+#screen:-ms-fullscreen {
+    height: 100%;
+    width: 100%;
+}
+#screen:-moz-full-screen {
+    height: 100%;
+    width: 100%;
+}
+#screen:fullscreen {
+    height: 100%;
+    width: 100%;
+}
+
+nav ul {
+    padding-left: 0px;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    height: 2em;
+    line-height: 2em;
+    min-width: 100px;
+    text-align: center;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+nav ul li img {
+    height: 80%;
+    vertical-align: middle;
+}
+
+nav ul a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.mid-button:hover {
+    background-color: rgba(255, 255, 255, 0.3);  
+}
+
+.mid-button {
+    border-style: solid;
+    border-color: #F1ECE9;
+    border-width: 1px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    cursor: pointer
+}
+
+canvas {
+    height: 100%;
+    width: 100%;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+/*課題：CSSのセレクタでclass指定を使用している*/
+.textField {
+    width: calc(100% - 20px);
+    
+    /*ここからwebページを参考　https://coliss.com/articles/build-websites/operation/css/css3-form-styling-cheat-sheet.html*/
+    padding:10px;
+    font-size:1.3em;
+    font-family:Arial, sans-serif;
+    color:#485058;
+    border:solid 1px #F1ECE9;
+    -webkit-box-shadow: 0px 1px rgba(255, 255, 255, 0.5);
+    -moz-box-shadow: 0px 1px rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 1px rgba(255, 255, 255, 0.5);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
